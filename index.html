@@ -4,11 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play a session Rock, Paper, Scissors!</title>
-    <script src="myScript.js"></script>
+    <script defer src="myScript.js"></script>
+    <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-    <h1>Rock, Paper, Scissors!</h1>
+<header class="header">
+    <h1 class="title"> Schere, Stein, Papier!</h1>
+</header>
+
+<div class="log">
+    <p id="computerChose"></p>
+    <p id="roundResult"></p>
 </div>
+
+<div id="scoreboard">
+    <div class="playerScoreboard" id="playerScoreboard">Playerscore: 0 </div>
+    <div class="computerScoreboard" id="computerScoreboard">Computerscore: 0</div>
+</div>
+
+<div class="buttons">
+    <button class="btn" id="buttonRock" value="Stein">Stein</button>
+    <button class="btn" id="buttonPaper" value="Papier">Papier</button>
+    <button class="btn" id="buttonScissors" value="Schere">Schere</button>
+</div>
+
+<div class="winnerScreen" id="winnerBlock">
+    <p id="winnerMsg"></p>
+</div>
+
+<button id="restartButton">Neustart</button>
+
 </body>
 </html>
